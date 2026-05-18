@@ -1,0 +1,8 @@
+{
+  "name": "Annette Lachmann - Rainbow Shaman",
+  "description": "Website for Annette Lachmann covering shamanic healing, medicine, and seminars.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
