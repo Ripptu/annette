@@ -43,12 +43,13 @@ export function AboutSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="w-full lg:w-1/2 relative px-4 pb-12"
           >
-            <div className="relative aspect-[4/5] w-full max-w-md mx-auto">
+            <div className="relative aspect-[4/5] w-full max-w-md mx-auto group">
               <img 
                 src="https://www.annettelachmann.earth/.cm4all/uproc.php/0/_Design/Content/content_Foto%20fu%CC%88r%20U%CC%88ber%20mich.jpg" 
                 alt="Annette Lachmann" 
-                className="object-cover w-full h-full rounded-sm shadow-xl"
+                className="object-cover w-full h-full rounded-[2rem] shadow-2xl transition-transform duration-700 group-hover:scale-105"
               />
+              <div className="absolute inset-0 rounded-[2rem] border-2 border-accent/20 scale-105 transition-transform duration-700 group-hover:scale-100" />
             </div>
           </motion.div>
 
@@ -60,21 +61,25 @@ export function AboutSection() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="w-full lg:w-1/2 flex flex-col items-start"
           >
-            <div className="text-accent text-sm tracking-widest font-semibold mb-4 uppercase">
-              // Über mich
+            <div className="text-accent text-sm tracking-widest font-semibold mb-4 uppercase flex items-center gap-2">
+              <span className="w-8 h-[2px] bg-accent"></span>
+              Rainbow Shaman
             </div>
-            <h2 className="font-serif text-4xl lg:text-6xl text-dark font-bold leading-tight mb-8">
-              Ich bin in Hamburg geboren... <br />
-              <span className="italic font-normal">und in einer sehr großen warmherzigen Familie aufgewachsen.</span>
+            <h2 className="font-serif text-4xl lg:text-5xl text-dark font-bold leading-tight mb-8">
+              Chakaruna – <br />
+              <span className="italic font-normal text-mid">Brückenbauerin zwischen den Welten.</span>
             </h2>
+            <p className="text-muted text-lg leading-relaxed mb-6 max-w-xl">
+              "Rainbow Shaman" ist mein Rufname auf diesem Weg. Als <strong className="font-semibold text-dark">Chakaruna</strong> (Quechua für Brückenbauerin) verwebe ich meine tiefen Wurzeln im peruanischen Schamanismus mit den kraftvollen Traditionen des Nordens, insbesondere aus Island, sowie den Wegen der Cherokee.
+            </p>
             <p className="text-muted text-lg leading-relaxed mb-10 max-w-xl">
-              Das Arbeiten mit schamanischer Energiemedizin hat mir einen völlig neuen Weg geöffnet. Physische, emotionale oder spirituelle Traumata können unser Energiefeld beeinflussen. Meine Berufung ist es, Menschen auf ihrem Weg der Heilung zu begleiten. 
+              Meine Berufung ist es, Menschen auf ihrem Weg der Heilung zu begleiten. Durch die Arbeit mit Energiemedizin können wir gemeinsam energetische Abdrücke lösen, eigene Kräfte erwecken und Heilung in die Welt tragen.
             </p>
             <a 
               href="#services" 
-              className="bg-dark text-white rounded-full px-8 py-3.5 hover:bg-mid transition-colors duration-300 font-medium tracking-wide flex items-center gap-3"
+              className="bg-dark text-white rounded-full px-8 py-3.5 hover:bg-accent hover:text-dark transition-colors duration-300 font-medium tracking-wide flex items-center gap-3"
             >
-              Mehr erfahren <span className="text-xl">→</span>
+              Meine Angebote ansehen <span className="text-xl">→</span>
             </a>
           </motion.div>
         </div>
@@ -156,7 +161,7 @@ export function VideoBreak() {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block" // Add fixed attachment if pure parallax desired, but video parallax is hard to performant. Using simple background video.
+        className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
         style={{ objectFit: 'cover' }}
       >
         <source src="https://cdn.pixabay.com/video/2025/01/22/254016_large.mp4" type="video/mp4" />
@@ -164,7 +169,7 @@ export function VideoBreak() {
       {/* Fallback frame/image on mobile or just standard cover */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0 md:hidden"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=1080&q=80')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1549421263-606013a29026?w=1080&q=80')" }}
       />
       
       <div className="absolute inset-0 bg-dark/65 z-10" />
@@ -176,7 +181,7 @@ export function VideoBreak() {
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="relative z-20 text-center px-6 max-w-4xl"
       >
-        <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white font-medium italic leading-tight mb-8 drop-shadow-lg">
+        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-medium italic leading-tight mb-8 drop-shadow-lg">
           "Fang nie an aufzuhören, hör nie auf anzufangen!"
         </h2>
         <div className="text-accent text-sm md:text-base tracking-[0.2em] font-medium uppercase">
@@ -356,7 +361,7 @@ export function WhyChooseUs() {
     {
       icon: <Users size={32} className="text-accent mb-6" />,
       title: "Begleitung in Gemeinschaft",
-      desc: "Zusammenkommen in Feuerzeremonien und Workshops auf dem Rainbow Path."
+      desc: "Zusammenkommen in Feuerzeremonien und Workshops auf dem Rainbow Shaman Path."
     }
   ];
 

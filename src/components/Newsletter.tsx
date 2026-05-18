@@ -23,7 +23,7 @@ export default function Newsletter() {
                 
                 <h2 className="font-serif text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                   Neuigkeiten auf dem <br/>
-                  <span className="italic text-accent font-normal">Rainbow Path</span>
+                  <span className="italic text-accent font-normal">Rainbow Shaman Path</span>
                 </h2>
                 
                 <p className="text-white/60 text-lg mb-10 max-w-md leading-relaxed">
