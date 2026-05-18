@@ -4,17 +4,12 @@ export default function Footer() {
   return (
     <footer className="bg-dark text-white pt-24 pb-8 overflow-hidden relative border-t-[6px] border-accent">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-20">
           
           {/* Col 1 */}
           <div className="lg:col-span-2">
             <a href="#" className="inline-block mb-6">
-              <div className="flex items-center gap-2">
-                <Leaf className="text-accent" size={32} />
-                <span className="font-serif text-3xl font-bold tracking-widest uppercase">
-                  Annette <span className="text-accent italic lowercase">Lachmann</span>
-                </span>
-              </div>
+              <img src="https://s1.directupload.eu/images/260518/xo6y4a25.webp" alt="Annette Lachmann Logo" className="h-16 w-auto" />
             </a>
             <p className="text-white/60 leading-relaxed mb-8 max-w-sm">
               Rainbow Shaman • Heilung, Zusammenkunft und Energetische Medizin. 
@@ -47,6 +42,18 @@ export default function Footer() {
               <li><a href="#" className="hover:text-accent transition-colors">Datenschutz</a></li>
               <li><a href="#" className="hover:text-accent transition-colors">Impressum</a></li>
               <li><a href="#cta" className="hover:text-accent transition-colors">Kontakt</a></li>
+            </ul>
+          </div>
+
+          {/* Col 4 */}
+          <div className="flex flex-col">
+            <h4 className="font-serif tracking-widest text-lg font-bold mb-6 text-white uppercase">Impressum</h4>
+            <ul className="space-y-2 text-white/60">
+              <li>Naturheilpraxis</li>
+              <li>Annette Lachmann</li>
+              <li>Holsteiner Chaussee 337</li>
+              <li>22457 Hamburg</li>
+              <li className="pt-2"><a href="mailto:annette@lachmann-co.de" className="hover:text-accent transition-colors">annette@lachmann-co.de</a></li>
             </ul>
           </div>
 

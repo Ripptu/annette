@@ -65,9 +65,9 @@ export function AboutSection() {
               <span className="w-8 h-[2px] bg-accent"></span>
               Rainbow Shaman
             </div>
-            <h2 className="font-serif text-4xl lg:text-5xl text-dark font-bold leading-tight mb-8">
+            <h2 className="font-serif text-4xl lg:text-5xl text-mid font-bold leading-tight mb-8">
               Chakaruna – <br />
-              <span className="italic font-normal text-mid">Brückenbauerin zwischen den Welten.</span>
+              <span className="italic font-normal text-accent">Brückenbauerin zwischen den Welten.</span>
             </h2>
             <p className="text-muted text-lg leading-relaxed mb-6 max-w-xl">
               "Rainbow Shaman" ist mein Rufname auf diesem Weg. Als <strong className="font-semibold text-dark">Chakaruna</strong> (Quechua für Brückenbauerin) verwebe ich meine tiefen Wurzeln im peruanischen Schamanismus mit den kraftvollen Traditionen des Nordens, insbesondere aus Island, sowie den Wegen der Cherokee.
@@ -115,7 +115,7 @@ export function ServicesSection() {
             <div className="text-accent text-sm tracking-widest font-semibold mb-2 uppercase">
               // Ausgewähltes
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-dark font-bold">Meine Angebote</h2>
+            <h2 className="font-serif text-4xl md:text-5xl text-mid font-bold">Meine Angebote</h2>
           </div>
           <a href="#" className="hidden md:inline-flex text-dark hover:text-accent font-semibold tracking-wide transition-colors">
             Alle Angebote →
@@ -156,16 +156,17 @@ export function ServicesSection() {
 export function VideoBreak() {
   return (
     <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden flex items-center justify-center">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
-        style={{ objectFit: 'cover' }}
-      >
-        <source src="https://cdn.pixabay.com/video/2025/01/22/254016_large.mp4" type="video/mp4" />
-      </video>
+      {/* Background Video */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden z-0 hidden md:block pointer-events-none">
+        <iframe
+          src="https://streamable.com/e/3r3zn7?autoplay=1&loop=1&muted=1"
+          className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[60vh] min-w-[177.77vw] -translate-x-1/2 -translate-y-1/2"
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          title="Background Video"
+        ></iframe>
+      </div>
       {/* Fallback frame/image on mobile or just standard cover */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0 md:hidden"
@@ -201,7 +202,7 @@ export function PortfolioSection() {
             <div className="text-accent text-sm tracking-widest font-semibold mb-2 uppercase text-mid">
               // Einblicke
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-dark font-bold relative z-10">Impressionen</h2>
+            <h2 className="font-serif text-4xl md:text-5xl text-mid font-bold relative z-10">Impressionen</h2>
           </div>
           
           <div className="absolute -top-12 -right-12 md:right-0 text-[8rem] md:text-[12rem] font-serif text-dark/5 font-black uppercase leading-none select-none pointer-events-none transform rotate-12">
@@ -306,7 +307,7 @@ export function BlogSection() {
     <section id="insights" className="py-24 bg-cream">
       <div className="container mx-auto px-6">
         <FadeUp className="flex justify-between items-end mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl text-dark font-bold">Schamanische Tools <br/>& Insights</h2>
+          <h2 className="font-serif text-4xl md:text-5xl text-mid font-bold">Schamanische Tools <br/>& Insights</h2>
         </FadeUp>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

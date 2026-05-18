@@ -21,9 +21,10 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
         {/* Logo */}
-        <a href="#" className="flex-shrink-0">
+        <a href="#" className="flex-shrink-0 flex items-center gap-4">
+          <img src="https://s1.directupload.eu/images/260518/xo6y4a25.webp" alt="Annette Lachmann - Rainbow Shaman Logo" className="h-10 w-auto" />
           <span className="font-serif text-2xl font-bold text-white tracking-widest uppercase">
-            Annette <span className="text-accent italic lowercase">Lachmann</span>
+            Rainbow <span className="text-accent italic lowercase">Shaman</span>
           </span>
         </a>
 

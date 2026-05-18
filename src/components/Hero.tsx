@@ -4,21 +4,22 @@ export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-dark">
       {/* Background Video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      >
-        <source src="https://cdn.pixabay.com/video/2025/01/22/254016_large.mp4" type="video/mp4" />
-      </video>
+      <div className="absolute inset-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+        <iframe
+          src="https://streamable.com/e/3r3zn7?autoplay=1&loop=1&muted=1"
+          className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2"
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          title="Background Video"
+        ></iframe>
+      </div>
 
       {/* Gradient Overlay */}
       <div 
         className="absolute inset-0 z-10"
         style={{
-          background: "linear-gradient(to top, rgba(13,31,14,0.95) 0%, rgba(13,31,14,0.45) 60%, transparent 100%)"
+          background: "linear-gradient(to top, rgba(13,20,31,0.95) 0%, rgba(13,20,31,0.45) 60%, transparent 100%)"
         }}
       />
 
